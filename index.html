@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon!</title>
     <style>
-      
         body {
             background-color: black;
             margin: 0;
@@ -13,18 +12,41 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
 
-       
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            text-align: center;
+        }
+
         img {
             max-width: 80%;
             height: auto;
+        }
+
+        .update-link {
+            color: #ffcc00;
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+
+        .update-link:hover {
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
 
-    <img src="underconstruction.gif" alt="Coming Soon!">
+    <div class="container">
+        <img src="underconstruction.gif" alt="Coming Soon!">
+        <a class="update-link" href="https://gamingstorm224.github.io/gs224-blog" target="_blank" rel="noopener noreferrer">Stay Up To Date</a>
+    </div>
 
 </body>
 </html>
